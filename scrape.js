@@ -4,7 +4,6 @@ const casper = require('casper').create();
 
 const scoreTable = [];
 
-
 function clicked() {
     this.echo('Current Page:' + this.getTitle());
     if(this.exists('.score-table')) {
