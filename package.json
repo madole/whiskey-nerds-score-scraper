@@ -1,0 +1,21 @@
+{
+  "name": "whiskey-nerds-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "better-console": "^0.2.4",
+    "casperjs": "^1.1.1",
+    "cheerio": "^0.20.0",
+    "phantomjs-prebuilt": "^2.1.7"
+  },
+  "scripts": {
+    "start": "npm run scrape && npm run transform",
+    "scrape": "casperjs scrape.js",
+    "transform": "node transform.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andrew McDowell <madoliole@gmail.com> (http://madole.github.io/)",
+  "license": "ISC"
+}
